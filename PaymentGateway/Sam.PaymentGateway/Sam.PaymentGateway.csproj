@@ -43,6 +43,20 @@
     <Compile Include="Concrete\SamsBankPaymentGateway.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sam.Command\Sam.Command.csproj">
+      <Project>{17e1ce5a-4b29-4904-8906-3ff5791e0d52}</Project>
+      <Name>Sam.Command</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sam.Communication\Sam.Communication.csproj">
+      <Project>{a0db5d1f-a528-4135-92e0-2bd1197880a3}</Project>
+      <Name>Sam.Communication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sam.Transaction\Sam.Transaction.csproj">
+      <Project>{6126cd08-dd21-47c0-a2b7-f2dc1fd0210b}</Project>
+      <Name>Sam.Transaction</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

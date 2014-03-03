@@ -19,14 +19,14 @@ namespace Sam.Command.Concrete
             this.transaction = transaction;
         }
 
-        public override void Execute()
+        public override Response Execute()
         {
-
+            throw new NotImplementedException();
         }
 
-        public override void UnExecute()
+        public override Response UnExecute()
         {
-
+            throw new NotImplementedException();
         }
     }
 }
